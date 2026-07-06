@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const freeTools = [
+  { name: "GitHub Copilot", category: "Coding", description: "AI code completion and suggestions. Free tier available for verified students, teachers, and open-source maintainers.", url: "https://github.com/partners", tag: "Free for OSS" },
+  { name: "Cursor", category: "Coding", description: "AI-native code editor with chat and multi-file editing. Free tier includes limited AI completions.", url: "https://cursor.com/affiliates", tag: "Free Tier" },
+  { name: "Codeium", category: "Coding", description: "AI-powered code completion across 70+ languages. Completely free for individual use.", url: "https://codeium.com", tag: "100% Free" },
+  { name: "Claude", category: "Chatbot", description: "Anthropic's AI assistant. Free tier with Claude 3.5 Sonnet — no credit card required.", url: "https://anthropic.com", tag: "Free Tier" },
+  { name: "ChatGPT", category: "Chatbot", description: "OpenAI's flagship chatbot. Free tier gives access to GPT-3.5 and basic features.", url: "https://openai.com", tag: "Free Tier" },
+  { name: "Gemini", category: "Chatbot", description: "Google's AI assistant. Free tier includes Gemini Pro with generous usage limits.", url: "https://gemini.google.com", tag: "Free Tier" },
+  { name: "Hugging Face", category: "ML Platform", description: "Open-source ML hub with free model hosting, datasets, and inference API.", url: "https://huggingface.co", tag: "100% Free" },
+  { name: "Groq", category: "API", description: "Ultra-fast LLM inference. Free tier includes generous rate limits on multiple models.", url: "https://groq.com", tag: "Free Tier" },
+  { name: "Langfuse", category: "Monitoring", description: "Open-source LLM observability. Self-host for free or use the generous cloud free tier.", url: "https://langfuse.com", tag: "Open Source" },
+  { name: "PostHog", category: "Analytics", description: "Product analytics, session replay, and feature flags. Generous free tier for startups.", url: "https://posthog.com/partners", tag: "Free Tier" },
+  { name: "Supabase", category: "Backend", description: "Open-source Firebase alternative with database, auth, and real-time. Free tier is generous.", url: "https://supabase.com/partners", tag: "Free Tier" },
+  { name: "Vercel", category: "Hosting", description: "Frontend deployment platform. Free tier covers hobby projects with 100GB bandwidth.", url: "https://vercel.com/partners", tag: "Free Tier" },
+  { name: "Tabnine", category: "Coding", description: "AI code completion with on-premise deployment. Free tier for individual developers.", url: "https://tabnine.com", tag: "Free Tier" },
+  { name: "Cody", category: "Coding", description: "Sourcegraph's AI coding assistant with codebase search context. Free tier available.", url: "https://sourcegraph.com/cody", tag: "Free Tier" },
+  { name: "Together AI", category: "API", description: "Open-source model hosting and inference. Free credits for new users.", url: "https://together.ai", tag: "Free Credits" },
+  { name: "Replicate", category: "API", description: "Run open-source models via API. Free tier includes limited inference credits.", url: "https://replicate.com", tag: "Free Tier" },
+  { name: "Raycast", category: "Productivity", description: "Mac productivity launcher with AI features. Core app is free forever.", url: "https://raycast.com/affiliates", tag: "Free Core" },
+  { name: "Notion", category: "Productivity", description: "Workspace with AI writing assistant. Free tier for personal use.", url: "https://notion.so/affiliates", tag: "Free Tier" },
+];
+
+const categories = [...new Set(freeTools.map(t => t.category))];
+---
+
+<BaseLayout title="Free AI Tools Directory" description="The best free AI tools for developers in 2026. Curated list of coding assistants, chatbots, APIs, and platforms with free tiers.">
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 text-center">
+    <span class="inline-block px-3 py-1 bg-[#f0fdf4] text-[#16a34a] text-xs font-medium rounded-full mb-4 border border-[#bbf7d0]">Free Resources</span>
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#171717] mb-4 leading-tight" style="letter-spacing: -2px;">
+      Best Free AI Tools for Developers
+    </h1>
+    <p class="text-lg text-[#4d4d4d] max-w-xl mx-auto leading-relaxed">
+      Every tool on this page has a free tier or open-source option. No credit card required to get started.
+    </p>
+  </section>
+
+  <!-- Email Signup -->
+  <section class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+    <div class="rounded-xl p-6 bg-[#f0fdf4] border border-[#bbf7d0] text-center">
+      <p class="text-sm font-medium text-[#171717] mb-2">📚 Want more free AI tools?</p>
+      <p class="text-xs text-[#4d4d4d] mb-3">We curate the best free AI tools weekly. Join 2,000+ developers.</p>
+      <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
+        <input type="email" placeholder="you@example.com" class="flex-1 px-3 py-2 bg-white rounded-lg text-sm text-[#171717] placeholder-[#999] focus:outline-none focus:ring-2 focus:ring-[#16a34a] border border-[#bbf7d0]" />
+        <button type="submit" class="px-4 py-2 bg-[#16a34a] hover:bg-[#15803d] text-white text-sm font-medium rounded-lg transition-colors whitespace-nowrap">Get Updates</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+    <div class="flex flex-wrap justify-center gap-2">
+      <button class="resource-filter active px-4 py-2 bg-[#171717] text-white text-sm font-medium rounded-lg transition-colors" data-category="all">All Tools</button>
+      {categories.map(cat => (
+        <button class="resource-filter px-4 py-2 bg-white text-[#4d4d4d] hover:bg-[#f5f5f5] text-sm font-medium rounded-lg transition-colors" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);" data-category={cat}>{cat}</button>
+      ))}
+    </div>
+  </section>
+
+  <!-- Tools Grid -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="tools-grid">
+      {freeTools.map(tool => (
+        <a href={tool.url} target="_blank" rel="noopener noreferrer" class="resource-card block p-5 rounded-xl bg-white transition-all hover:shadow-md group" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08), 0px 2px 4px rgba(0,0,0,0.04);" data-category={tool.category}>
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-block px-2 py-0.5 rounded text-xs font-medium bg-[#f5f5f5] text-[#4d4d4d]">{tool.category}</span>
+            <span class="inline-block px-2 py-0.5 rounded text-xs font-medium bg-[#f0fdf4] text-[#16a34a] border border-[#bbf7d0]">{tool.tag}</span>
+          </div>
+          <h3 class="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#0072f5] transition-colors" style="letter-spacing: -0.48px;">{tool.name}</h3>
+          <p class="text-[#4d4d4d] text-sm leading-relaxed mb-3">{tool.description}</p>
+          <span class="text-[#0072f5] text-sm font-medium group-hover:underline">Try Free →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SEO-friendly article content -->
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <h2 class="text-xl font-semibold text-[#171717] mb-4" style="letter-spacing: -0.96px;">How to Choose Free AI Tools</h2>
+    <div class="prose text-sm">
+      <p>Most AI tools offer free tiers to get you hooked. Here's what to look for:</p>
+      <ul>
+        <li><strong>Usage limits:</strong> Check how many API calls, completions, or messages you get per month.</li>
+        <li><strong>Model access:</strong> Free tiers often give you older or smaller models. The best free tiers include flagship models.</li>
+        <li><strong>No credit card:</strong> The best tools let you start completely free without entering payment info.</li>
+        <li><strong>Open source:</strong> Self-hosted tools like Langfuse and Stable Diffusion are truly free — no limits, no catches.</li>
+      </ul>
+      <p>All tools listed above meet at least one of these criteria. We update this page regularly as new tools launch or change their pricing.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.resource-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.resource-filter').forEach(b => {
+        b.classList.remove('active', 'bg-[#171717]', 'text-white');
+        b.classList.add('bg-white', 'text-[#4d4d4d]');
+      });
+      btn.classList.add('active', 'bg-[#171717]', 'text-white');
+      btn.classList.remove('bg-white', 'text-[#4d4d4d]');
+      
+      const cat = btn.dataset.category;
+      document.querySelectorAll('.resource-card').forEach(card => {
+        if (cat === 'all' || card.dataset.category === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

@@ -47,6 +47,14 @@ ChatGPT is the baseline that everything else gets compared to. It's not always t
 
 We give it **5 out of 5 stars**.
 
+## Get Started
+
+ChatGPT's free tier is genuinely useful. If you're hitting rate limits, the Plus plan at $20/month unlocks GPT-4 and all features.
+
+👉 [Try ChatGPT Free →](https://openai.com)
+👉 [Try Cursor for Coding →](https://cursor.com/affiliates)
+👉 [Explore More AI Tools →](/resources)
+
 ## Related Articles
 
 - [Claude vs ChatGPT for Coding](/comparisons/claude-vs-chatgpt-coding) — Deep dive into how these models compare for code

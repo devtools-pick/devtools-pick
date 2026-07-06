@@ -51,6 +51,29 @@ function getSlug(collection: string, entry: any): string {
       <a href="/best-of" class="w-full sm:w-auto px-6 py-3 bg-white text-[#171717] font-medium rounded-lg transition-colors text-sm" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);">
         Best Of Lists
       </a>
+      <a href="/resources" class="w-full sm:w-auto px-6 py-3 bg-white text-[#16a34a] font-medium rounded-lg transition-colors text-sm" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);">
+        Free Resources
+      </a>
+    </div>
+  </section>
+  <!-- Featured Deal Banner -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <div class="relative overflow-hidden rounded-2xl p-6 sm:p-8" style="background: linear-gradient(135deg, #171717 0%, #333 100%);">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+      <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2 py-0.5 bg-[#16a34a] text-white text-xs font-medium rounded-full">🔥 Featured Deal</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-semibold text-white mb-1" style="letter-spacing: -0.96px;">Cursor Pro — 20% off first 3 months</h3>
+          <p class="text-white/70 text-sm">The AI-native code editor trusted by 100,000+ developers. Multi-file editing, codebase awareness, and unlimited AI completions.</p>
+        </div>
+        <a href="https://cursor.com/affiliates" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-[#f5f5f5] text-[#171717] font-semibold rounded-lg transition-colors text-sm whitespace-nowrap">
+          Get the Deal →
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -190,24 +213,28 @@ function getSlug(collection: string, entry: any): string {
 
   <!-- Newsletter Signup -->
   <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-    <div class="rounded-2xl p-8 sm:p-10 bg-[#fafafa]" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);">
-      <h2 class="text-xl font-semibold text-[#171717] mb-2" style="letter-spacing: -0.96px;">Stay in the Loop</h2>
-      <p class="text-[#4d4d4d] text-sm mb-6">Get the latest AI tool reviews and comparisons delivered to your inbox. No spam, unsubscribe anytime.</p>
-      <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Thanks for subscribing! (Demo)')">
+    <div class="rounded-2xl p-8 sm:p-10 bg-[#fafafa] text-center" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);">
+      <div class="w-12 h-12 bg-[#f0fdf4] rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#bbf7d0]">
+        <svg class="w-6 h-6 text-[#16a34a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+      </div>
+      <h2 class="text-xl font-semibold text-[#171717] mb-2" style="letter-spacing: -0.96px;">📬 Weekly AI Tool Picks — Free</h2>
+      <p class="text-[#4d4d4d] text-sm mb-6 max-w-md mx-auto">Join 2,000+ developers getting the best AI tool recommendations, deals, and tutorials every Tuesday.</p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault(); window.open('https://buttondown.com', '_blank');">
         <input
           type="email"
           placeholder="you@example.com"
-          class="flex-1 px-4 py-3 bg-white rounded-lg text-[#171717] placeholder-[#999] focus:outline-none focus:ring-2 focus:ring-[#0072f5] text-sm"
+          class="flex-1 px-4 py-3 bg-white rounded-lg text-[#171717] placeholder-[#999] focus:outline-none focus:ring-2 focus:ring-[#16a34a] text-sm"
           style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);"
         />
         <button
           type="submit"
-          class="px-6 py-3 bg-[#171717] hover:bg-[#333] text-white font-medium rounded-lg transition-colors text-sm whitespace-nowrap"
+          class="px-6 py-3 bg-[#16a34a] hover:bg-[#15803d] text-white font-medium rounded-lg transition-colors text-sm whitespace-nowrap"
         >
-          Subscribe
+          Subscribe Free
         </button>
       </form>
-      <p class="text-[#666] text-xs mt-3">Join 2,000+ developers. Unsubscribe anytime.</p>
+      <p class="text-[#666] text-xs mt-3">No spam, ever. Unsubscribe anytime. We respect your inbox.</p>
+      <p class="text-[#999] text-xs mt-1">Powered by Buttondown · Free forever</p>
     </div>
   </section>
 

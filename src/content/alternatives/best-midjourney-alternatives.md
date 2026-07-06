@@ -58,3 +58,12 @@ The best choice when you need accurate text in your images. Logo design, signage
 ## Conclusion
 
 The AI image generation space is more competitive than ever. Each tool has different strengths. Midjourney is still popular, but if you need free access, commercial licensing, or better text rendering, one of these alternatives might work better for your needs.
+
+## Try Them Free
+
+Several of these tools offer free tiers or free credits to get started.
+
+👉 [Try DALL·E 3 via ChatGPT →](https://openai.com)
+👉 [Try Leonardo AI →](https://leonardo.ai)
+👉 [Try Cursor for Code →](https://cursor.com/affiliates)
+👉 [Explore More Free AI Tools →](/resources)

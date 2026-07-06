@@ -42,3 +42,12 @@ For complex reasoning tasks, Claude and ChatGPT are neck and neck. Gemini has im
 ## Our Pick
 
 For most users, **Claude** offers the best combination of quality, context window, and value. ChatGPT is better if you need plugins and integrations. Gemini makes sense if you're deep in the Google ecosystem.
+
+## Try Them Free
+
+All three offer free tiers — no credit card required.
+
+👉 [Try Claude →](https://anthropic.com)
+👉 [Try ChatGPT →](https://openai.com)
+👉 [Try Cursor for Coding →](https://cursor.com/affiliates)
+👉 [Explore Free AI Tools →](/resources)
