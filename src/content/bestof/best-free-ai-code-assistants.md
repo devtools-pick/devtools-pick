@@ -87,7 +87,11 @@ ChatGPT's free tier can answer coding questions, generate code, and explain conc
 👉 [Try GitHub Copilot →](https://github.com/partners)
 👉 [Try Codeium →](https://codeium.com)
 👉 [Try Tabnine →](https://tabnine.com)
-## AFFILIATE_LINK ##
+👉 [Try Cursor →](https://cursor.com/affiliates)
+👉 [Try GitHub Copilot →](https://github.com/partners)
+👉 [Try Codeium →](https://codeium.com)
+👉 [Try Tabnine →](https://tabnine.com)
+👉 [Try Cody →](https://sourcegraph.com/cody)
 
 ## Related Articles
 

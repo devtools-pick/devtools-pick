@@ -61,7 +61,8 @@ For pure AI capability, **Cursor** is the winner. But for most developers, **Git
 If you're willing to switch editors and want the best AI coding experience, go with Cursor. Otherwise, Copilot is the safe choice.
 
 👉 [Try Cursor →](https://cursor.com/affiliates)
-## AFFILIATE_LINK ##
+👉 [Try Cursor →](https://cursor.com/affiliates)
+👉 [Try GitHub Copilot →](https://github.com/partners)
 
 ## Related Articles
 

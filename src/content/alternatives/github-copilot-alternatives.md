@@ -114,7 +114,10 @@ Windsurf's Cascade feature offers deep multi-file editing similar to Cursor, wit
 👉 [Try Cursor →](https://cursor.com/affiliates)
 👉 [Try Codeium →](https://codeium.com)
 👉 [Try Cody →](https://sourcegraph.com/cody)
-## AFFILIATE_LINK ##
+👉 [Try Cursor →](https://cursor.com/affiliates)
+👉 [Try Codeium →](https://codeium.com)
+👉 [Try Cody →](https://sourcegraph.com/cody)
+👉 [Try Tabnine →](https://tabnine.com)
 
 ## Related Articles
 

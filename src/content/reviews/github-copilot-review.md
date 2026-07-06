@@ -71,7 +71,7 @@ GitHub Copilot is a solid AI coding tool, especially at $10/month. Cursor has su
 
 We give Copilot **4 out of 5 stars**. It's not the most powerful option anymore, but it's reliable and affordable.
 
-## AFFILIATE_LINK ##
+👉 [Try GitHub Copilot →](https://github.com/partners)
 
 ## Related Articles
 

@@ -75,7 +75,8 @@ Writesonic generates content fast. It's good for quick documentation, product de
 **Best for:** Quick drafts, product descriptions, short docs.
 
 👉 [Try Notion →](https://notion.so/affiliates)
-## AFFILIATE_LINK ##
+👉 [Try Notion →](https://notion.so/affiliates)
+👉 [Try Raycast →](https://raycast.com/affiliates)
 
 ## Related Articles
 

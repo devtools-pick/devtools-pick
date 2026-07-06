@@ -67,7 +67,8 @@ For most coding tasks, Claude 3.5 Sonnet offers the best balance of quality and 
 **Claude** wins for coding quality and context window. Its ability to understand and work with large codebases makes it the better choice for serious development work. ChatGPT is more accessible and has better integrations, but Claude has the edge where it matters most.
 
 👉 [Try Anthropic →](https://anthropic.com)
-## AFFILIATE_LINK ##
+👉 [Try Anthropic →](https://anthropic.com)
+👉 [Try OpenAI →](https://openai.com)
 
 ## Related Articles
 

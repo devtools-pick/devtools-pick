@@ -22,7 +22,13 @@ const categoryMeta: Record<string, { label: string; count: number; href: string;
 };
 
 function getSlug(collection: string, entry: any): string {
-  return `/${collection}/${entry.id}`;
+  const routeMap: Record<string, string> = {
+    'bestof': 'best-of',
+    'reviews': 'reviews',
+    'comparisons': 'comparisons',
+    'alternatives': 'alternatives'
+  };
+  return `/${routeMap[collection] || collection}/${entry.id}`;
 }
 ---
 

@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://aitools.dev',
+  site: 'https://devtools-pick.vercel.app',
   integrations: [
     sitemap(),
   ],

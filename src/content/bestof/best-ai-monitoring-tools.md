@@ -86,7 +86,10 @@ Patronus specializes in AI safety monitoring. It detects hallucinations, bias, a
 👉 [Try Langfuse →](https://langfuse.com)
 👉 [Try LangSmith →](https://smith.langchain.com)
 👉 [Try Sentry →](https://sentry.io/partners)
-## AFFILIATE_LINK ##
+👉 [Try Langfuse →](https://langfuse.com)
+👉 [Try LangSmith →](https://smith.langchain.com)
+👉 [Try Sentry →](https://sentry.io/partners)
+👉 [Try PostHog →](https://posthog.com/partners)
 
 ## Related Articles
 

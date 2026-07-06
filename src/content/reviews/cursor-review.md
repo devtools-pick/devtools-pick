@@ -84,7 +84,7 @@ Cursor's multi-file editing and codebase awareness are genuinely useful features
 
 We give Cursor **4.5 out of 5 stars**. If you're curious about AI-powered coding and don't mind switching editors, it's worth trying.
 
-## AFFILIATE_LINK ##
+👉 [Try Cursor →](https://cursor.com/affiliates)
 
 ## Related Articles
 

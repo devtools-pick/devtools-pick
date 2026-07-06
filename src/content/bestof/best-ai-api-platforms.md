@@ -95,7 +95,10 @@ Access 300,000+ models through a simple API. From text generation to image class
 👉 [Try Groq →](https://groq.com)
 👉 [Try Together AI →](https://together.ai)
 👉 [Try Replicate →](https://replicate.com)
-## AFFILIATE_LINK ##
+👉 [Try Groq →](https://groq.com)
+👉 [Try Together AI →](https://together.ai)
+👉 [Try Replicate →](https://replicate.com)
+👉 [Try Hugging Face →](https://huggingface.co)
 
 ## Related Articles
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aitools.dev/sitemap-index.xml
+Sitemap: https://devtools-pick.vercel.app/sitemap-index.xml

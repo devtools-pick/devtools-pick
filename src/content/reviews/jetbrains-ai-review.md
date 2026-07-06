@@ -69,7 +69,7 @@ JetBrains AI Assistant is a solid addition to the JetBrains ecosystem. It's not 
 
 We give it **4 out of 5 stars**. Recommended for JetBrains users who want AI without switching tools.
 
-## AFFILIATE_LINK ##
+👉 [Try JetBrains →](https://jetbrains.com/partners)
 
 ## Related Articles
 
