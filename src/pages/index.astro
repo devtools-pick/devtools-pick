@@ -41,7 +41,7 @@ function getSlug(collection: string, entry: any): string {
     <p class="text-lg text-[#4d4d4d] max-w-2xl mx-auto mb-4 leading-relaxed">
       Honest, in-depth reviews and comparisons to help developers choose the right AI tools — no hype, no fluff, just real experience.
     </p>
-    <p class="text-sm text-[#999] mb-10">
+    <p class="text-sm text-[#666] mb-10">
       {totalArticles} articles · Updated weekly · By developers, for developers
     </p>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -64,7 +64,7 @@ function getSlug(collection: string, entry: any): string {
           </div>
           <div>
             <span class="text-[#171717] text-sm font-medium">{meta.label}</span>
-            <p class="text-[#999] text-xs">{meta.count} articles</p>
+            <p class="text-[#666] text-xs">{meta.count} articles</p>
           </div>
         </a>
       ))}
@@ -86,7 +86,7 @@ function getSlug(collection: string, entry: any): string {
             <p class="text-[#4d4d4d] text-sm mb-4 line-clamp-2">{review.data.description}</p>
             <div class="flex items-center justify-between text-xs">
               <span class="font-medium text-[#4d4d4d]">{review.data.product}</span>
-              <span class="text-[#999]">{review.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              <span class="text-[#666]">{review.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
             </div>
           </a>
         ))}
@@ -107,7 +107,7 @@ function getSlug(collection: string, entry: any): string {
             <span class="inline-block px-2 py-0.5 rounded text-xs font-medium mb-3 bg-[#f5f5f5] text-[#4d4d4d]">Comparison</span>
             <h3 class="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#0072f5] transition-colors leading-snug" style="letter-spacing: -0.48px;">{comp.data.title}</h3>
             <p class="text-[#4d4d4d] text-sm mb-4 line-clamp-2">{comp.data.description}</p>
-            <div class="flex items-center gap-2 text-xs text-[#999]">
+            <div class="flex items-center gap-2 text-xs text-[#666]">
               <span>{comp.data.products.join(' vs ')}</span>
             </div>
           </a>
@@ -129,7 +129,7 @@ function getSlug(collection: string, entry: any): string {
             <span class="inline-block px-2 py-0.5 rounded text-xs font-medium mb-3 bg-[#f5f5f5] text-[#4d4d4d]">Alternatives</span>
             <h3 class="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#0072f5] transition-colors leading-snug" style="letter-spacing: -0.48px;">{alt.data.title}</h3>
             <p class="text-[#4d4d4d] text-sm mb-4 line-clamp-2">{alt.data.description}</p>
-            <div class="flex items-center gap-2 text-xs text-[#999]">
+            <div class="flex items-center gap-2 text-xs text-[#666]">
               <span>{alt.data.alternatives_list.length} alternatives</span>
             </div>
           </a>
@@ -151,7 +151,7 @@ function getSlug(collection: string, entry: any): string {
             <span class="inline-block px-2 py-0.5 rounded text-xs font-medium mb-3 bg-[#f5f5f5] text-[#4d4d4d]">Best Of</span>
             <h3 class="text-base font-semibold text-[#171717] mb-2 group-hover:text-[#0072f5] transition-colors leading-snug" style="letter-spacing: -0.48px;">{best.data.title}</h3>
             <p class="text-[#4d4d4d] text-sm mb-4 line-clamp-2">{best.data.description}</p>
-            <div class="flex items-center gap-2 text-xs text-[#999]">
+            <div class="flex items-center gap-2 text-xs text-[#666]">
               <span>{best.data.tools.length} tools listed</span>
             </div>
           </a>
@@ -207,7 +207,7 @@ function getSlug(collection: string, entry: any): string {
           Subscribe
         </button>
       </form>
-      <p class="text-[#999] text-xs mt-3">Join 2,000+ developers. Unsubscribe anytime.</p>
+      <p class="text-[#666] text-xs mt-3">Join 2,000+ developers. Unsubscribe anytime.</p>
     </div>
   </section>
 

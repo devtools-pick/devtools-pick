@@ -30,7 +30,7 @@ const encodedTitle = encodeURIComponent(title);
       <div>
         <!-- Breadcrumb -->
         {breadcrumb.length > 0 && (
-          <nav class="flex items-center gap-2 text-sm text-[#999] mb-6">
+          <nav class="flex items-center gap-2 text-sm text-[#666] mb-6">
             <a href="/" class="hover:text-[#171717] transition-colors">Home</a>
             {breadcrumb.map((crumb) => (
               <>
@@ -47,9 +47,9 @@ const encodedTitle = encodeURIComponent(title);
             <span class="px-2.5 py-0.5 rounded text-xs font-medium bg-[#f5f5f5] text-[#4d4d4d]">
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </span>
-            <time class="text-[#999] text-sm">{formattedDate}</time>
-            <span class="text-[#ccc]">·</span>
-            <span class="text-[#999] text-sm">5 min read</span>
+            <time class="text-[#666] text-sm">{formattedDate}</time>
+            <span class="text-[#999]">·</span>
+            <span class="text-[#666] text-sm">5 min read</span>
           </div>
           <h1 class="text-3xl sm:text-4xl font-semibold text-[#171717] mb-4 leading-tight" style="letter-spacing: -1.6px;">{title}</h1>
           <p class="text-lg text-[#4d4d4d] leading-relaxed">{description}</p>
@@ -59,7 +59,7 @@ const encodedTitle = encodeURIComponent(title);
             </div>
             <div>
               <p class="text-[#171717] text-sm font-medium">{author}</p>
-              <p class="text-[#999] text-xs">Published {formattedDate}</p>
+              <p class="text-[#666] text-xs">Published {formattedDate}</p>
             </div>
           </div>
         </header>
