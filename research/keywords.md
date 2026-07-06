@@ -2,7 +2,7 @@
 
 > Generated: July 2026
 > Niche: AI tools for developers (English-language affiliate site)
-> Total keywords: 120+
+> Total keywords: 180+
 
 ## How to Read This Table
 
@@ -228,6 +228,45 @@
 
 ---
 
+## 9. High-Intent Long-Tail Keywords — Purchase Ready (30 keywords)
+
+> These keywords target developers who are actively comparing options or ready to buy. They are specific enough to rank quickly and convert well. Prioritize these for content production.
+
+| # | Keyword | Intent | Page Type | Difficulty |
+|---|---------|--------|-----------|------------|
+| 151 | Cursor vs Windsurf for large codebases | High | comparison | Easy |
+| 152 | best AI code review tools for GitHub PRs | High | list | Easy |
+| 153 | AI coding assistant for JetBrains users | High | list | Easy |
+| 154 | Claude Code alternatives | High | alternative | Easy |
+| 155 | Cline vs Roo Code vs Cursor | High | comparison | Easy |
+| 156 | AI tools for writing unit tests | High | list | Easy |
+| 157 | LLM observability pricing comparison | High | comparison | Easy |
+| 158 | best AI coding tools with privacy no training | High | list | Easy |
+| 159 | free AI coding assistant no credit card | High | list | Easy |
+| 160 | AI developer stack for startups | High | list | Easy |
+| 161 | Cursor vs Claude Code for solo developers | High | comparison | Easy |
+| 162 | best AI tools for code review automation 2026 | High | list | Easy |
+| 163 | GitHub Copilot vs Cursor pricing comparison | High | comparison | Easy |
+| 164 | AI coding assistant that works offline | High | list | Easy |
+| 165 | best AI pair programmer for Python backend | High | list | Easy |
+| 166 | Windsurf vs Cursor vs Copilot pricing | High | comparison | Easy |
+| 167 | AI tools for generating TypeScript types | High | list | Easy |
+| 168 | best AI code assistant for monorepo teams | High | list | Easy |
+| 169 | Cline vs Cursor for agentic coding | High | comparison | Easy |
+| 170 | AI tools for automated PR reviews on GitHub | High | list | Easy |
+| 171 | cheapest AI coding assistant for students | High | list | Easy |
+| 172 | AI developer tools with SOC 2 compliance | High | list | Easy |
+| 173 | best AI coding tool for React and Next.js | High | list | Easy |
+| 174 | AI assistant for legacy code refactoring | High | list | Easy |
+| 175 | Roo Code vs Cursor for VS Code users | High | comparison | Easy |
+| 176 | AI tools for writing documentation from code | High | list | Easy |
+| 177 | best AI coding assistant for Go developers | High | list | Easy |
+| 178 | Claude Code vs GitHub Copilot for teams | High | comparison | Easy |
+| 179 | AI tools with self-hosted deployment option | High | list | Easy |
+| 180 | best AI code completion for Vim and Neovim | High | list | Easy |
+
+---
+
 ## Summary Statistics
 
 | Category | Count | High Intent % |
@@ -241,20 +280,24 @@
 | AI Deployment Tools | 15 | 40% |
 | AI Monitoring Tools | 15 | 27% |
 | Cross-Category | 20 | 45% |
-| **TOTAL** | **150** | **~38% high intent** |
+| High-Intent Long-Tail | 30 | 100% |
+| **TOTAL** | **180** | **~49% high intent** |
 
 ## Difficulty Distribution
 
 | Difficulty | Count | Percentage |
 |------------|-------|------------|
-| Easy | 88 | 59% |
-| Medium | 55 | 37% |
-| Hard | 7 | 5% |
+| Easy | 118 | 66% |
+| Medium | 55 | 31% |
+| Hard | 7 | 4% |
 
 ## Priority Recommendations
 
+### Tier 0 — Money Pages (HIGH intent + EASY difficulty, Section 9)
+These are the new long-tail keywords with the highest purchase intent. They should be produced FIRST as "money pages" with Decision Box components and direct affiliate CTAs. All 30 keywords in Section 9 are EASY difficulty and HIGH intent — the best combination for fast ranking and conversion.
+
 ### Tier 1 — Quick Wins (Easy difficulty + High intent)
-Focus on these first for fastest ROI:
+Focus on these second for fastest ROI:
 - `#8` best free AI code assistant for VS Code
 - `#25` AI code generation tools for enterprise
 - `#36` best AI tools to generate commit messages
@@ -290,3 +333,4 @@ Focus on these first for fastest ROI:
 4. **Long-tail wins** — Keywords with year suffixes (2026) have less competition but need annual updates
 5. **"Free" modifier increases clicks** — Keywords containing "free" have higher CTR even if commercial intent is slightly lower
 6. **Developer-specific modifiers** — Adding "for Python developers", "for VS Code", "for Node.js" etc. reduces competition while maintaining intent
+7. **Decision Boxes boost conversions** — "Money pages" (Section 9) should include a Decision Box above the fold so readers can self-select quickly

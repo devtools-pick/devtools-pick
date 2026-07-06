@@ -7,14 +7,16 @@ interface Props {
   canonicalURL?: string;
   image?: string;
   type?: 'website' | 'article';
+  jsonLd?: Record<string, any>;
 }
 
 const {
   title,
   description,
   canonicalURL = Astro.url.href,
-  image = '/og-default.png',
+  image = '/og-default.svg',
   type = 'website',
+  jsonLd,
 } = Astro.props;
 
 const siteName = 'AI Tools Hub';
@@ -60,14 +62,18 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
   <title>{fullTitle}</title>
 
   <!-- Structured Data -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": type === 'article' ? 'Article' : 'WebSite',
-    "name": fullTitle,
-    "description": description,
-    "url": canonicalURL,
-    ...(type === 'article' ? {} : { "publisher": { "@type": "Organization", "name": siteName } })
-  })} />
+  {jsonLd ? (
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  ) : (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": type === 'article' ? 'Article' : 'WebSite',
+      "name": fullTitle,
+      "description": description,
+      "url": canonicalURL,
+      ...(type === 'article' ? {} : { "publisher": { "@type": "Organization", "name": siteName } })
+    })} />
+  )}
 </head>
 <body class="min-h-screen flex flex-col bg-white text-[#171717]">
   <!-- Navigation -->

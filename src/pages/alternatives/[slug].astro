@@ -13,6 +13,11 @@ export async function getStaticPaths() {
 const { alt } = Astro.props;
 const { Content } = await render(alt);
 
+// Calculate reading time
+const wordCount = (alt.body || '').split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.ceil(wordCount / 200));
+const readingTime = `${readMinutes} min read`;
+
 // Build ItemList JSON-LD for alternatives
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -48,6 +53,7 @@ const jsonLd = {
   category="alternatives"
   breadcrumb={[{ label: 'Alternatives', href: '/alternatives' }]}
   jsonLd={jsonLd}
+  readingTime={readingTime}
 >
   <!-- Alternatives Summary -->
   <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 mb-8">

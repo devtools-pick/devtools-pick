@@ -10,10 +10,11 @@ interface Props {
   tags?: string[];
   category: string;
   breadcrumb?: { label: string; href: string }[];
+  readingTime?: string;
 }
 
 const {
-  title, description, date, author = 'AI Tools Team', image, tags = [], category, breadcrumb = []
+  title, description, date, author = 'AI Tools Team', image, tags = [], category, breadcrumb = [], readingTime = '5 min read'
 } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -49,7 +50,7 @@ const encodedTitle = encodeURIComponent(title);
             </span>
             <time class="text-[#666] text-sm">{formattedDate}</time>
             <span class="text-[#999]">·</span>
-            <span class="text-[#666] text-sm">5 min read</span>
+            <span class="text-[#666] text-sm">{readingTime}</span>
           </div>
           <h1 class="text-3xl sm:text-4xl font-semibold text-[#171717] mb-4 leading-tight" style="letter-spacing: -1.6px;">{title}</h1>
           <p class="text-lg text-[#4d4d4d] leading-relaxed">{description}</p>

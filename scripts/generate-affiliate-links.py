@@ -122,9 +122,9 @@ def resolve_affiliate_keys(filepath, frontmatter, content):
 
 
 def generate_cta(key, affiliate_data):
-    """Generate a single affiliate CTA line."""
+    """Generate a single affiliate CTA line with proper rel attributes."""
     tool = affiliate_data[key]
-    return f"👉 [Try {tool['name']} →]({tool['url']})"
+    return f'👉 <a href="{tool["url"]}" rel="sponsored nofollow noopener noreferrer" target="_blank">Try {tool["name"]} →</a>'
 
 
 def process_file(filepath, affiliate_data):

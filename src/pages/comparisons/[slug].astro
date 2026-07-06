@@ -13,6 +13,11 @@ export async function getStaticPaths() {
 const { comp } = Astro.props;
 const { Content } = await render(comp);
 
+// Calculate reading time
+const wordCount = (comp.body || '').split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.ceil(wordCount / 200));
+const readingTime = `${readMinutes} min read`;
+
 // Build Product JSON-LD for each compared product
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -41,6 +46,7 @@ const jsonLd = {
   category="comparison"
   breadcrumb={[{ label: 'Comparisons', href: '/comparisons' }]}
   jsonLd={jsonLd}
+  readingTime={readingTime}
 >
   <!-- Products Overview -->
   <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 mb-8">

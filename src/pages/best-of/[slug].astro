@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import DecisionBox from '../../components/DecisionBox.astro';
 
 export async function getStaticPaths() {
   const bestof = await getCollection('bestof');
@@ -12,6 +13,11 @@ export async function getStaticPaths() {
 
 const { best } = Astro.props;
 const { Content } = await render(best);
+
+// Calculate reading time
+const wordCount = (best.body || '').split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.ceil(wordCount / 200));
+const readingTime = `${readMinutes} min read`;
 
 // Build ItemList JSON-LD for best-of
 const jsonLd = {
@@ -48,7 +54,18 @@ const jsonLd = {
   category="bestof"
   breadcrumb={[{ label: 'Best Of', href: '/best-of' }]}
   jsonLd={jsonLd}
+  readingTime={readingTime}
 >
+  <!-- Decision Box (money page component — above the fold) -->
+  {best.data.decisionBox && (
+    <DecisionBox
+      bestFor={best.data.decisionBox.bestFor}
+      skipIf={best.data.decisionBox.skipIf}
+      cheapestPlan={best.data.decisionBox.cheapestPlan}
+      teamPick={best.data.decisionBox.teamPick}
+    />
+  )}
+
   <!-- Tools Overview -->
   <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 mb-8">
     <h2 class="text-lg font-bold text-white mb-4">Featured Tools ({best.data.tools.length})</h2>

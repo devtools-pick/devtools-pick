@@ -61,6 +61,29 @@
         "type": "string"
       }
     },
+    "decisionBox": {
+      "type": "object",
+      "properties": {
+        "bestFor": {
+          "type": "string"
+        },
+        "skipIf": {
+          "type": "string"
+        },
+        "cheapestPlan": {
+          "type": "string"
+        },
+        "teamPick": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bestFor",
+        "skipIf",
+        "cheapestPlan",
+        "teamPick"
+      ]
+    },
     "$schema": {
       "type": "string"
     }

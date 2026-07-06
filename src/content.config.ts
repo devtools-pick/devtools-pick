@@ -75,6 +75,12 @@ const bestof = defineCollection({
     image: z.string().optional(),
     featured: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
+    decisionBox: z.object({
+      bestFor: z.string(),
+      skipIf: z.string(),
+      cheapestPlan: z.string(),
+      teamPick: z.string(),
+    }).optional(),
   }),
 });
 

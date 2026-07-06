@@ -12,6 +12,42 @@ export async function getStaticPaths() {
 
 const { review } = Astro.props;
 const { Content } = await render(review);
+
+// Calculate reading time
+const wordCount = (review.body || '').split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.ceil(wordCount / 200));
+const readingTime = `${readMinutes} min read`;
+
+// Build Product JSON-LD with aggregateRating
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: review.data.product,
+  description: review.data.description,
+  image: review.data.image,
+  ...(review.data.affiliate_link ? { url: review.data.affiliate_link } : {}),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: review.data.rating,
+    bestRating: 5,
+    worstRating: 1,
+    reviewCount: 1,
+  },
+  review: {
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: review.data.author || 'AI Tools Team',
+    },
+    datePublished: review.data.date.toISOString().split('T')[0],
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: review.data.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  },
+};
 ---
 
 <ArticleLayout
@@ -23,6 +59,8 @@ const { Content } = await render(review);
   tags={review.data.tags}
   category="review"
   breadcrumb={[{ label: 'Reviews', href: '/reviews' }]}
+  jsonLd={jsonLd}
+  readingTime={readingTime}
 >
   <!-- Rating Box -->
   <div class="bg-[#fafafa] rounded-2xl p-6 sm:p-8 mb-8" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08), 0px 2px 4px rgba(0,0,0,0.04);">
