@@ -21,57 +21,45 @@ featured: true
 tags: ["coding", "github", "copilot", "developer-tools", "review"]
 ---
 
-GitHub Copilot was the tool that started the whole AI coding trend. Three years later, it's still one of the most widely used AI coding assistants. But the competition has gotten a lot better. Is Copilot still worth it?
+GitHub Copilot is no longer the shiny new thing in AI coding. That is probably good for it. The product now feels less like a demo and more like a quiet utility: it sits inside the editor, predicts the next few lines, answers code questions, and occasionally helps with pull requests if your team lives on GitHub.
 
-## What is GitHub Copilot?
+I still use Copilot differently from Cursor or Claude. I do not ask it to redesign a service or reason through a whole migration. I use it when I already know the shape of the change and want the editor to keep up: write the repetitive test cases, fill in a mapper, finish a React prop type, or explain a stack trace without leaving the IDE. In that role, Copilot remains one of the easiest AI coding tools to recommend.
 
-GitHub Copilot is an AI pair programmer from GitHub (Microsoft). It integrates directly into your IDE and provides real-time code suggestions, completions, and chat functionality powered by OpenAI's models.
+## What GitHub Copilot Actually Does Well
 
-## Key Features
+Copilot's main advantage is that it does not ask you to change much. Install the extension in VS Code, JetBrains, Neovim, Visual Studio, or another supported editor, sign in with GitHub, and suggestions start appearing in the file you already had open. That sounds ordinary now, but it matters when you work across several repos or pair with people who use different IDEs.
 
-### Code Completion
-Copilot's core strength is inline code completion. It suggests entire lines or blocks of code as you type, learning from your coding patterns and the context of your open files.
+Inline completion is still the strongest part of the product. When I typed a test name like `returns 403 when the user lacks project access`, Copilot usually produced the right structure: arrange the user, create the fixture, call the endpoint, expect the forbidden response. I would still adjust naming and helper usage, but the first pass saved enough keystrokes to feel worthwhile.
 
-### Copilot Chat
-The chat feature lets you ask coding questions, get explanations, generate tests, and debug code. It's accessible through a sidebar panel in supported editors. It's functional but basic compared to what Cursor and Claude offer.
+Copilot Chat is more useful than it was in the early days, though it is not where I would start for large refactors. It can explain unfamiliar code, generate small functions, suggest test cases, and summarize errors from the terminal. The quality depends heavily on how much context it sees. If the answer requires a convention hidden in another package, Copilot may sound confident while missing the local pattern.
 
-### Multi-Editor Support
-Unlike Cursor (which requires switching editors), Copilot works as an extension in VS Code, JetBrains IDEs, Neovim, and more. This is a major advantage for developers who don't want to change their workflow.
+## Where It Fits Better Than Cursor
 
-### GitHub Integration
-Copilot integrates with GitHub's ecosystem. Pull request summaries, code review suggestions, and issue triage are all powered by Copilot. If your team already lives on GitHub, this integration matters.
+Cursor is the stronger AI workspace when a task crosses many files. Copilot is the better low-friction assistant. That distinction matters. A backend team using IntelliJ, a frontend developer in VS Code, and an infra engineer in Neovim can all use Copilot without forcing a tool migration.
 
-## Pricing
+GitHub integration also gives Copilot a practical edge for teams already using issues, pull requests, and code review on GitHub. PR summaries are not a replacement for review, but they are handy when a change includes generated files, fixture updates, or a long list of small edits. The same is true for code review suggestions: I treat them as hints, not verdicts, but they occasionally catch missing null checks or awkward duplication.
 
-| Plan | Price | What You Get |
-|------|-------|-------------|
-| Free | $0 | Limited completions and chat |
-| Individual | $10/mo | Unlimited completions, all features |
-| Business | $19/mo | Team management, policy controls |
-| Enterprise | $39/mo | Advanced security, audit logs |
+## The Parts That Still Need Supervision
 
-At $10/month, Copilot is the most affordable premium AI coding tool. Students and open source maintainers get it free.
+Copilot can be too eager with common patterns. It sometimes suggests outdated library APIs because the surrounding code looks similar to examples it has seen before. In a React project, I have seen it reach for a hook pattern that the repo had already moved away from. In Java, it may generate a clean-looking service method that ignores the transaction boundary used everywhere else.
 
-## Who Should Use Copilot?
+The context model is also narrower than an AI-native editor. Copilot has improved codebase awareness, but it still feels strongest when the answer is close to the active file. For multi-package changes, I expect to guide it file by file. That is not a dealbreaker; it just means Copilot works best as acceleration, not delegation.
 
-Copilot works well for:
-- Developers who don't want to switch editors
-- JetBrains IDE users
-- Budget-conscious developers ($10/mo is hard to beat)
-- Teams already using GitHub for code hosting
+Privacy and policy settings deserve a real admin pass before team rollout. Copilot Business and Enterprise give organizations more controls, but developers still need to avoid pasting secrets into prompts and should understand how public code suggestions, telemetry settings, and company policies are configured.
 
-Copilot is a harder sell for:
-- Developers who want the most advanced AI features
-- Those working on very large codebases (limited context)
-- Developers who prefer standalone AI chat experiences
+## Pricing and Value
+
+The individual paid plan has historically been one of Copilot's best arguments because it costs less than many AI editors. The free tier is useful for light experimentation, students and eligible open source maintainers may qualify for free access, and Business or Enterprise plans add controls that matter to companies. Since pricing and plan names change, I would check GitHub's live plan page before buying for a team.
+
+For an individual developer, the value question is simple: if Copilot saves you even a few minutes a day on boilerplate, tests, and quick explanations, the paid plan is easy to justify. If you mostly want deep agent-style edits, Cursor or Claude Code will feel more capable.
 
 ## Final Verdict
 
-GitHub Copilot is a solid AI coding tool, especially at $10/month. Cursor has surpassed it in raw AI capability, but Copilot's multi-editor support and GitHub integration keep it relevant. For most developers who don't want to overhaul their setup, Copilot is the practical choice.
+GitHub Copilot earns its 4 out of 5 rating because it remains the most practical AI coding assistant for developers who do not want to rebuild their workflow. It is not the smartest agent, and it is not the best tool for sweeping multi-file work. It is the assistant I would give to a mixed-IDE team that wants useful AI tomorrow morning.
 
-We give Copilot **4 out of 5 stars**. It's not the most powerful option anymore, but it's reliable and affordable.
+I would choose Copilot for daily autocomplete, JetBrains support, GitHub-native team workflows, and a lower individual price. I would choose Cursor when the editor can become the AI workspace, and I would choose Claude directly when I need longer reasoning over a messy codebase.
 
-👉 [Try GitHub Copilot →](https://github.com/partners)
+[Try GitHub Copilot ->](https://github.com/partners)
 
 ## Related Articles
 
@@ -82,16 +70,21 @@ We give Copilot **4 out of 5 stars**. It's not the most powerful option anymore,
 ## FAQ
 
 ### Is GitHub Copilot free?
-GitHub Copilot offers a free tier with limited usage. Students, teachers, and open source maintainers can get Copilot Pro for free.
+
+GitHub Copilot has a free tier with usage limits. Students, teachers, and eligible open source maintainers may also qualify for free Copilot Pro access through GitHub's education and open source programs.
 
 ### How much does GitHub Copilot cost?
-Individual plan is $10/month, Business is $19/month, and Enterprise is $39/month per user.
+
+Copilot's individual plan is commonly listed at a lower monthly price than Cursor, while Business and Enterprise plans add organization controls. Check GitHub's current plan page before purchasing because plan names and quotas can change.
 
 ### Does Copilot work with JetBrains?
-Yes, GitHub Copilot has official plugins for IntelliJ IDEA, PyCharm, WebStorm, and other JetBrains IDEs.
 
-### Can Copilot write entire functions?
-Yes, Copilot can generate entire functions based on comments, function names, and surrounding code context.
+Yes. GitHub provides Copilot support for JetBrains IDEs such as IntelliJ IDEA, PyCharm, WebStorm, and others, which is one of its biggest advantages over editor-specific tools.
+
+### Can Copilot replace a senior developer?
+
+No. It can draft code, tests, explanations, and small fixes, but it still misses project conventions, security constraints, and edge cases. Treat every suggestion as a draft.
 
 ### Is Copilot better than Cursor?
-Cursor offers more advanced AI features, but Copilot is cheaper and works in more editors. The best choice depends on your priorities.
+
+Copilot is cheaper for many individuals and works in more editors. Cursor is stronger for project-aware chat and multi-file edits. The better choice depends on whether editor flexibility or deeper AI editing matters more.
