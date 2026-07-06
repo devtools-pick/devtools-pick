@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-secondary: #06b6d4;
+  --color-accent: #8b5cf6;
+  --color-surface: #0f172a;
+  --color-surface-light: #1e293b;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Prose styles for article content */
+.prose {
+  color: var(--color-text);
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: white;
+  font-weight: 700;
+}
+.prose a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: var(--color-primary-dark);
+}
+.prose img {
+  border-radius: 0.75rem;
+}
+.prose code {
+  background: var(--color-surface-light);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+.prose pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.prose blockquote {
+  border-left-color: var(--color-primary);
+  color: var(--color-text-muted);
+}
