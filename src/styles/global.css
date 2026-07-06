@@ -38,10 +38,12 @@ body {
 /* Prose styles for article content */
 .prose {
   color: var(--color-text);
+  line-height: 1.8;
 }
 .prose h1, .prose h2, .prose h3, .prose h4 {
   color: white;
   font-weight: 700;
+  scroll-margin-top: 5rem;
 }
 .prose a {
   color: var(--color-primary);
@@ -69,4 +71,90 @@ body {
 .prose blockquote {
   border-left-color: var(--color-primary);
   color: var(--color-text-muted);
+}
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.prose th, .prose td {
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 1rem;
+}
+.prose th {
+  background: var(--color-surface-light);
+  color: white;
+  font-weight: 600;
+}
+.prose td {
+  color: var(--color-text);
+}
+
+/* Back to top button */
+#back-to-top {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(10px);
+}
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Floating TOC sidebar */
+.toc-sidebar {
+  position: sticky;
+  top: 5rem;
+}
+
+/* Share button hover effects */
+.share-btn {
+  transition: transform 0.2s, background-color 0.2s;
+}
+.share-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile reading improvements */
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .prose h1 {
+    font-size: 1.75rem;
+  }
+  .prose h2 {
+    font-size: 1.4rem;
+  }
+  .prose h3 {
+    font-size: 1.15rem;
+  }
+  .prose p {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animated gradient for hero */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #6366f1, #06b6d4, #8b5cf6, #6366f1);
+  background-size: 300% 300%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Feedback buttons */
+.feedback-btn {
+  transition: transform 0.15s, background-color 0.15s;
+}
+.feedback-btn:hover {
+  transform: scale(1.05);
+}
+.feedback-btn:active {
+  transform: scale(0.95);
 }

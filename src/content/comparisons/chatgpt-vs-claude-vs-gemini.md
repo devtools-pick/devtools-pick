@@ -33,6 +33,12 @@ All three are capable coders, but Claude's larger context window gives it an edg
 
 For complex reasoning tasks, Claude and ChatGPT are neck and neck. Gemini has improved significantly but still trails slightly in logic-heavy tasks.
 
+## Related Articles
+
+- [ChatGPT Review](/reviews/chatgpt-review) — Our full ChatGPT review
+- [Claude vs ChatGPT for Coding](/comparisons/claude-vs-chatgpt-coding) — Head-to-head for coding tasks
+- [Best AI API Platforms](/best-of/best-ai-api-platforms) — Compare API providers for your projects
+
 ## Our Pick
 
 For most users, **Claude** offers the best balance of quality, context window, and value. ChatGPT is the better choice if you need plugins and integrations, while Gemini shines if you're deep in the Google ecosystem.

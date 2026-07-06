@@ -12,6 +12,23 @@ export async function getStaticPaths() {
 
 const { comp } = Astro.props;
 const { Content } = await render(comp);
+
+// Build Product JSON-LD for each compared product
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: comp.data.title,
+  description: comp.data.description,
+  itemListElement: comp.data.products.map((product: string, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Product',
+      name: product,
+    },
+  })),
+  numberOfItems: comp.data.products.length,
+};
 ---
 
 <ArticleLayout
@@ -23,6 +40,7 @@ const { Content } = await render(comp);
   tags={comp.data.tags}
   category="comparison"
   breadcrumb={[{ label: 'Comparisons', href: '/comparisons' }]}
+  jsonLd={jsonLd}
 >
   <!-- Products Overview -->
   <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 mb-8">

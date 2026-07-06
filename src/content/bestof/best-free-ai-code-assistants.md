@@ -83,7 +83,16 @@ ChatGPT's free tier can answer coding questions, generate code, and explain conc
 
 **Free tier:** GPT-3.5 access, limited GPT-4 usage.
 
+👉 [Try Cursor →](https://cursor.com/affiliates)
+👉 [Try GitHub Copilot →](https://github.com/partners)
+👉 [Try Codeium →](https://codeium.com)
+👉 [Try Tabnine →](https://tabnine.com)
 ## AFFILIATE_LINK ##
+
+## Related Articles
+
+- [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives) — More options including paid tools
+- [Best AI Coding Assistants](/best-of/best-ai-coding-assistants) — Our top picks for all budgets
 
 ## FAQ
 

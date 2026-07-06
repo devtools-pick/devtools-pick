@@ -86,6 +86,12 @@ We give Cursor **4.5 out of 5 stars** — a must-try for any developer curious a
 
 ## AFFILIATE_LINK ##
 
+## Related Articles
+
+- [Cursor vs GitHub Copilot](/comparisons/cursor-vs-github-copilot) — Full comparison of the two leading AI code editors
+- [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives) — 10 alternatives including Cursor
+- [Best AI Coding Assistants](/best-of/best-ai-coding-assistants) — Our curated top picks for developers
+
 ## FAQ
 
 ### Is Cursor free?

@@ -71,23 +71,24 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 </head>
 <body class="min-h-screen flex flex-col">
   <!-- Navigation -->
-  <nav class="border-b border-slate-800 bg-[#0f172a]/80 backdrop-blur-sm sticky top-0 z-50">
+  <nav class="border-b border-slate-800/80 bg-[#0f172a]/90 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <a href="/" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-lg shadow-indigo-500/20">
             <span class="text-white font-bold text-sm">AI</span>
           </div>
-          <span class="text-white font-bold text-lg">AI Tools Hub</span>
+          <span class="text-white font-bold text-lg hidden sm:block">AI Tools Hub</span>
         </a>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="/reviews" class="text-slate-400 hover:text-white transition-colors">Reviews</a>
-          <a href="/comparisons" class="text-slate-400 hover:text-white transition-colors">Comparisons</a>
-          <a href="/alternatives" class="text-slate-400 hover:text-white transition-colors">Alternatives</a>
-          <a href="/best-of" class="text-slate-400 hover:text-white transition-colors">Best Of</a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="/reviews" class="px-3 py-2 text-slate-400 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all text-sm font-medium">Reviews</a>
+          <a href="/comparisons" class="px-3 py-2 text-slate-400 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all text-sm font-medium">Comparisons</a>
+          <a href="/alternatives" class="px-3 py-2 text-slate-400 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all text-sm font-medium">Alternatives</a>
+          <a href="/best-of" class="px-3 py-2 text-slate-400 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all text-sm font-medium">Best Of</a>
+          <a href="/about" class="px-3 py-2 text-slate-400 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all text-sm font-medium">About</a>
         </div>
         <div class="md:hidden">
-          <button id="mobile-menu-btn" class="text-slate-400 hover:text-white">
+          <button id="mobile-menu-btn" class="text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800/50 transition-all">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -95,12 +96,13 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
         </div>
       </div>
       <!-- Mobile menu -->
-      <div id="mobile-menu" class="hidden md:hidden pb-4">
-        <div class="flex flex-col gap-3">
-          <a href="/reviews" class="text-slate-400 hover:text-white transition-colors">Reviews</a>
-          <a href="/comparisons" class="text-slate-400 hover:text-white transition-colors">Comparisons</a>
-          <a href="/alternatives" class="text-slate-400 hover:text-white transition-colors">Alternatives</a>
-          <a href="/best-of" class="text-slate-400 hover:text-white transition-colors">Best Of</a>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-slate-800/50 mt-1 pt-3">
+        <div class="flex flex-col gap-1">
+          <a href="/reviews" class="text-slate-400 hover:text-white hover:bg-slate-800/50 px-3 py-2.5 rounded-lg transition-all text-sm font-medium">Reviews</a>
+          <a href="/comparisons" class="text-slate-400 hover:text-white hover:bg-slate-800/50 px-3 py-2.5 rounded-lg transition-all text-sm font-medium">Comparisons</a>
+          <a href="/alternatives" class="text-slate-400 hover:text-white hover:bg-slate-800/50 px-3 py-2.5 rounded-lg transition-all text-sm font-medium">Alternatives</a>
+          <a href="/best-of" class="text-slate-400 hover:text-white hover:bg-slate-800/50 px-3 py-2.5 rounded-lg transition-all text-sm font-medium">Best Of</a>
+          <a href="/about" class="text-slate-400 hover:text-white hover:bg-slate-800/50 px-3 py-2.5 rounded-lg transition-all text-sm font-medium">About</a>
         </div>
       </div>
     </div>
@@ -111,10 +113,27 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     <slot />
   </main>
 
+  <!-- Global Affiliate Disclosure Banner -->
+  <div class="bg-amber-500/5 border-y border-amber-500/20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div class="flex-shrink-0 p-2 bg-amber-500/10 rounded-lg border border-amber-500/20">
+          <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <div>
+          <p class="text-sm text-amber-200/80 leading-relaxed">
+            <strong class="text-amber-300">Affiliate Disclosure:</strong> AI Tools Hub is supported by our readers. Some links on this site are affiliate links, meaning we may earn a commission if you make a purchase through them — at no extra cost to you. This helps us keep the site running and continue providing honest, independent reviews.
+          </p>
+          <a href="/affiliate-disclosure" class="text-xs text-amber-400 hover:text-amber-300 underline mt-1 inline-block transition-colors">Read our full affiliate disclosure →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="border-t border-slate-800 bg-[#0f172a]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div>
           <div class="flex items-center gap-2 mb-4">
             <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center">
@@ -122,11 +141,11 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
             </div>
             <span class="text-white font-bold text-lg">AI Tools Hub</span>
           </div>
-          <p class="text-slate-400 text-sm">Your trusted source for AI tool reviews, comparisons, and recommendations.</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Your trusted source for AI tool reviews, comparisons, and recommendations. Built by developers, for developers.</p>
         </div>
         <div>
           <h3 class="text-white font-semibold mb-4">Content</h3>
-          <ul class="space-y-2 text-sm">
+          <ul class="space-y-2.5 text-sm">
             <li><a href="/reviews" class="text-slate-400 hover:text-white transition-colors">Reviews</a></li>
             <li><a href="/comparisons" class="text-slate-400 hover:text-white transition-colors">Comparisons</a></li>
             <li><a href="/alternatives" class="text-slate-400 hover:text-white transition-colors">Alternatives</a></li>
@@ -134,16 +153,23 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
           </ul>
         </div>
         <div>
-          <h3 class="text-white font-semibold mb-4">Legal</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/privacy" class="text-slate-400 hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="/terms" class="text-slate-400 hover:text-white transition-colors">Terms of Service</a></li>
+          <h3 class="text-white font-semibold mb-4">Company</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="/about" class="text-slate-400 hover:text-white transition-colors">About Us</a></li>
             <li><a href="/affiliate-disclosure" class="text-slate-400 hover:text-white transition-colors">Affiliate Disclosure</a></li>
           </ul>
         </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="/privacy" class="text-slate-400 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="/terms" class="text-slate-400 hover:text-white transition-colors">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500 text-sm">
+      <div class="border-t border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-sm">
         <p>&copy; {new Date().getFullYear()} AI Tools Hub. All rights reserved.</p>
+        <p class="text-xs text-slate-600">Made with ❤️ for the developer community</p>
       </div>
     </div>
   </footer>

@@ -92,7 +92,15 @@ Access 300,000+ models through a simple API. From text generation to image class
 
 **Pricing:** Free tier for small models, pay-per-use for larger ones.
 
+👉 [Try Groq →](https://groq.com)
+👉 [Try Together AI →](https://together.ai)
+👉 [Try Replicate →](https://replicate.com)
 ## AFFILIATE_LINK ##
+
+## Related Articles
+
+- [Claude vs ChatGPT for Coding](/comparisons/claude-vs-chatgpt-coding) — Compare the top AI models
+- [Best AI Monitoring Tools](/best-of/best-ai-monitoring-tools) — Monitor your AI API usage
 
 ## FAQ
 

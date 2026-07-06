@@ -71,6 +71,12 @@ We give it **4 out of 5 stars** — highly recommended for JetBrains users.
 
 ## AFFILIATE_LINK ##
 
+## Related Articles
+
+- [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives) — JetBrains AI is one of many Copilot alternatives
+- [Best Free AI Code Assistants](/best-of/best-free-ai-code-assistants) — Free tools for developers on a budget
+- [Cursor vs GitHub Copilot](/comparisons/cursor-vs-github-copilot) — How the top AI editors compare
+
 ## FAQ
 
 ### Is JetBrains AI Assistant free?
