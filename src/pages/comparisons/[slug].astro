@@ -49,8 +49,8 @@ const jsonLd = {
   readingTime={readingTime}
 >
   <!-- Products Overview -->
-  <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 mb-8">
-    <h2 class="text-lg font-bold text-white mb-4">Products Compared</h2>
+  <div class="bg-[#f8f9fa] border border-[#e5e7eb] rounded-xl p-6 mb-8">
+    <h2 class="text-lg font-bold text-[#171717] mb-4">Products Compared</h2>
     <div class="flex flex-wrap gap-2">
       {comp.data.products.map((product) => (
         <span class="px-3 py-1.5 bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 rounded-lg text-sm font-medium">
@@ -59,9 +59,9 @@ const jsonLd = {
       ))}
     </div>
     {comp.data.winner && (
-      <div class="mt-4 pt-4 border-t border-slate-700">
-        <span class="text-sm text-slate-400">Our Pick: </span>
-        <span class="text-sm text-white font-semibold">{comp.data.winner}</span>
+      <div class="mt-4 pt-4 border-t border-[#e5e7eb]">
+        <span class="text-sm text-[#666]">Our Pick: </span>
+        <span class="text-sm text-[#171717] font-semibold">{comp.data.winner}</span>
       </div>
     )}
   </div>
