@@ -10,40 +10,40 @@ interface Props {
 const { bestFor, skipIf, cheapestPlan, teamPick } = Astro.props;
 ---
 
-<div class="decision-box my-8 p-6 rounded-xl border border-emerald-700/40 bg-emerald-950/20">
-  <h3 class="text-lg font-bold text-emerald-300 mb-4 flex items-center gap-2">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div class="decision-box my-8 p-6 rounded-xl bg-[#f8f9fa]" style="box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.08);">
+  <h3 class="text-lg font-bold text-[#171717] mb-4 flex items-center gap-2">
+    <svg class="w-5 h-5 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
     Quick Decision
   </h3>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <div class="flex items-start gap-3">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-sm font-bold">✓</span>
+      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center text-sm font-bold">✓</span>
       <div>
-        <p class="text-xs font-semibold text-emerald-400 uppercase tracking-wide">Best for</p>
-        <p class="text-slate-200 text-sm mt-0.5">{bestFor}</p>
+        <p class="text-xs font-semibold text-[#16a34a] uppercase tracking-wide">Best for</p>
+        <p class="text-[#171717] text-sm mt-0.5">{bestFor}</p>
       </div>
     </div>
     <div class="flex items-start gap-3">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-300 flex items-center justify-center text-sm font-bold">✗</span>
+      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#fee2e2] text-[#dc2626] flex items-center justify-center text-sm font-bold">✗</span>
       <div>
-        <p class="text-xs font-semibold text-red-400 uppercase tracking-wide">Skip if</p>
-        <p class="text-slate-200 text-sm mt-0.5">{skipIf}</p>
+        <p class="text-xs font-semibold text-[#dc2626] uppercase tracking-wide">Skip if</p>
+        <p class="text-[#171717] text-sm mt-0.5">{skipIf}</p>
       </div>
     </div>
     <div class="flex items-start gap-3">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 text-blue-300 flex items-center justify-center text-sm font-bold">$</span>
+      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#dbeafe] text-[#2563eb] flex items-center justify-center text-sm font-bold">$</span>
       <div>
-        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Cheapest plan</p>
-        <p class="text-slate-200 text-sm mt-0.5">{cheapestPlan}</p>
+        <p class="text-xs font-semibold text-[#2563eb] uppercase tracking-wide">Cheapest plan</p>
+        <p class="text-[#171717] text-sm mt-0.5">{cheapestPlan}</p>
       </div>
     </div>
     <div class="flex items-start gap-3">
-      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center text-sm font-bold">★</span>
+      <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#fef3c7] text-[#d97706] flex items-center justify-center text-sm font-bold">★</span>
       <div>
-        <p class="text-xs font-semibold text-amber-400 uppercase tracking-wide">Team pick</p>
-        <p class="text-slate-200 text-sm mt-0.5">{teamPick}</p>
+        <p class="text-xs font-semibold text-[#d97706] uppercase tracking-wide">Team pick</p>
+        <p class="text-[#171717] text-sm mt-0.5">{teamPick}</p>
       </div>
     </div>
   </div>
