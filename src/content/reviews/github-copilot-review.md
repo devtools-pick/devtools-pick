@@ -66,6 +66,7 @@ I would choose Copilot for daily autocomplete, JetBrains support, GitHub-native 
 - [Cursor vs GitHub Copilot](/comparisons/cursor-vs-github-copilot) — See how Copilot stacks up against its biggest competitor
 - [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives) — 10 alternatives if Copilot isn't right for you
 - [Best AI Coding Assistants](/best-of/best-ai-coding-assistants) — Our top picks for AI-powered coding tools
+- [GitHub Copilot Free vs Paid](/best-of/github-copilot-free-vs-paid) — Is Pro worth $10/month?
 
 ## FAQ
 

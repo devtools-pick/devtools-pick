@@ -68,6 +68,7 @@ If you are a VS Code user who wants the best AI editing loop and can afford the 
 - [Cursor Review](/reviews/cursor-review) — Our full review of Cursor's AI-native editor
 - [GitHub Copilot Review](/reviews/github-copilot-review) — Is Copilot still worth the price?
 - [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives) — 10 alternatives if neither fits your workflow
+- [GitHub Copilot Free vs Paid](/best-of/github-copilot-free-vs-paid) — Is Pro worth $10/month?
 
 ## FAQ
 

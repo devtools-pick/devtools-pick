@@ -87,6 +87,7 @@ I would not recommend Cursor to every developer. Copilot is cheaper. JetBrains u
 - [Cursor vs GitHub Copilot](/comparisons/cursor-vs-github-copilot): Full comparison of the two leading AI code editors
 - [Best GitHub Copilot Alternatives](/alternatives/github-copilot-alternatives): 10 alternatives including Cursor
 - [Best AI Coding Assistants](/best-of/best-ai-coding-assistants): Our curated top picks for developers
+- [GitHub Copilot Free vs Paid](/best-of/github-copilot-free-vs-paid): Is Pro worth $10/month?
 
 ## FAQ
 
