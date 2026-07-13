@@ -5,9 +5,9 @@
 <h2 id="what-makes-large-codebases-hard-for-ai-tools">What makes large codebases hard for AI tools</h2>
 <p>Large repositories create three specific problems for AI assistants:</p>
 <ol>
-<li><strong>Context window limits.</strong> The tool cannot fit the entire repo in memory, so it must decide which files to read. Bad decisions lead to edits that conflict with existing patterns.</li>
-<li><strong>Dependency awareness.</strong> Changing a shared utility function affects every consumer. Tools that do not trace those dependencies create subtle regressions.</li>
-<li><strong>Performance.</strong> Indexing and searching a large repo takes time. If the tool is slow, developers stop using it for anything beyond autocomplete.</li>
+<li>Context window limits. The tool cannot fit the entire repo in memory, so it must decide which files to read. Bad decisions lead to edits that conflict with existing patterns.</li>
+<li>Dependency awareness. Changing a shared utility function affects every consumer. Tools that do not trace those dependencies create subtle regressions.</li>
+<li>Performance. Indexing and searching a large repo takes time. If the tool is slow, developers stop using it for anything beyond autocomplete.</li>
 </ol>
 <p>Both Cursor and Windsurf try to solve these problems, but they make different tradeoffs.</p>
 <h2 id="how-cursor-handles-large-codebases">How Cursor handles large codebases</h2>

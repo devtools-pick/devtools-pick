@@ -33,9 +33,9 @@ The choice matters because large codebases punish tools that lose context or mak
 
 Large repositories create three specific problems for AI assistants:
 
-1. **Context window limits.** The tool cannot fit the entire repo in memory, so it must decide which files to read. Bad decisions lead to edits that conflict with existing patterns.
-2. **Dependency awareness.** Changing a shared utility function affects every consumer. Tools that do not trace those dependencies create subtle regressions.
-3. **Performance.** Indexing and searching a large repo takes time. If the tool is slow, developers stop using it for anything beyond autocomplete.
+1. Context window limits. The tool cannot fit the entire repo in memory, so it must decide which files to read. Bad decisions lead to edits that conflict with existing patterns.
+2. Dependency awareness. Changing a shared utility function affects every consumer. Tools that do not trace those dependencies create subtle regressions.
+3. Performance. Indexing and searching a large repo takes time. If the tool is slow, developers stop using it for anything beyond autocomplete.
 
 Both Cursor and Windsurf try to solve these problems, but they make different tradeoffs.
 

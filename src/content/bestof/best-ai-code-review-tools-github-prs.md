@@ -40,11 +40,11 @@ I tested five tools across several real GitHub repositories. The ones worth usin
 
 I ran each tool on the same set of pull requests: a TypeScript API refactor, a Python data pipeline change, and a React component update. I measured:
 
-- **Comment quality.** Did the tool catch real issues, or just flag style?
-- **Noise level.** How many comments were unhelpful or redundant?
-- **Integration.** How easy was setup with GitHub?
-- **Language support.** Does it work across languages or only specific ones?
-- **Pricing.** Is it accessible for small teams?
+Comment quality. Did the tool catch real issues, or just flag style?
+- Noise level. How many comments were unhelpful or redundant?
+- Integration. How easy was setup with GitHub?
+- Language support. Does it work across languages or only specific ones?
+- Pricing. Is it accessible for small teams?
 
 ## Our Top Picks
 
