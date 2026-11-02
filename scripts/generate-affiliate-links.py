@@ -62,6 +62,8 @@ MULTI_TOOL_MAP = {
     "comparisons/cursor-vs-github-copilot.md": ["cursor", "github-copilot"],
     "comparisons/chatgpt-vs-claude-vs-gemini.md": ["openai", "anthropic"],
     "alternatives/github-copilot-alternatives.md": ["cursor", "codeium", "cody", "tabnine"],
+    "alternatives/claude-code-alternatives.md": ["cursor", "github-copilot", "tabnine", "anthropic"],
+    "bestof/best-ai-coding-assistants-jetbrains.md": ["jetbrains", "github-copilot", "cursor", "tabnine"],
     "alternatives/best-midjourney-alternatives.md": [],  # no affiliate links for image gen
 }
 
